@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:template_project/screen/dashboard_page.dart';
 import 'package:template_project/screen/home_screen.dart';
 import 'package:template_project/screen/login_page.dart';
+import 'package:template_project/screen/profile_page.dart';
 import 'package:template_project/screen/register_page.dart';
 
 void main(){
@@ -19,7 +21,9 @@ class MyApp extends StatelessWidget{
       routes: {
         '/': (context) => HomeScreen(),
         '/register':(context) => RegisterPage(),
-        '/login': (context) => LoginPage()
+        '/login': (context) => LoginPage(),
+        '/profile': (context)=> ProfilePage(),
+        '/dashboard': (context)=> DashboardPage()
       }
     );
   }

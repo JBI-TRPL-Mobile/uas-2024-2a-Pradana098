@@ -31,7 +31,7 @@ class LoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             ElevatedButton(
-              onPressed: () {},
+               onPressed: () => Navigator.pushNamed(context, '/dashboard'),
               child: const Text('Sign In'),
             ),
             const SizedBox(height: 16.0),
